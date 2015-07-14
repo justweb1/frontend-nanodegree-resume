@@ -51,10 +51,8 @@ This is empty on purpose! Your code to build the resume will go here.
   var formattedWelcomemsg = HTMLwelcomeMsg.replace("%data%", bio.welcomemsg);
   var formattedSkills = HTMLskills.replace("%data%", bio.skills.splice(", "));
 
-  $("#header").prepend(formattedWelcomemsg);
   $("#header").prepend(formattedRole);
   $("#header").prepend(formattedName);
-  $("#header").prepend(formattedBiopic);
 
   $("#topContacts").prepend(formattedLocation);
   $("#topContacts").prepend(formattedBlog);
@@ -63,6 +61,8 @@ This is empty on purpose! Your code to build the resume will go here.
   $("#topContacts").prepend(formattedEmail);
   $("#topContacts").prepend(formattedMobile);
   
+  $("#header").append(formattedBiopic);
+  $("#header").append(formattedWelcomemsg);
   $("#header").append(HTMLskillsStart);
   $("#header").append(formattedSkills);
   
