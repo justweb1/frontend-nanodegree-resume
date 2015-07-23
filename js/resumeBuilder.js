@@ -93,7 +93,7 @@ This is empty on purpose! Your code to build the resume will go here.
     ]
   };
   
-  header.display = function() {
+  bio.display = function() {
     var formattedName = HTMLheaderName.replace("%data%", bio.name);
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     var formattedMobile = HTMLmobile.replace("%data%", bio.contact.mobile);
@@ -130,7 +130,7 @@ This is empty on purpose! Your code to build the resume will go here.
     };
   };
 
-  header.display();
+  bio.display();
   
 
   work.display = function() {
